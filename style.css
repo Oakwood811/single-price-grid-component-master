@@ -16,12 +16,12 @@ body{
 
 .container{
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 60rem;
 
 }
 .wrapper{
   display: grid;
-  border-radius: 7px;
+  border-radius: 0.4375rem;
   overflow: hidden;
   background-color: white;
   grid-template-columns: 50% 50%;
@@ -29,7 +29,7 @@ body{
   margin: 2rem 1rem;
 }
 .box{
-  padding: 40px;
+  padding: 2.5rem;
 }
 .join{
   grid-area: a;
@@ -40,20 +40,20 @@ body{
 }
 h2{
   color: white;
-  font-size: 20px;
-  padding-bottom: 15px;
+  font-size: 1.25rem;
+  padding-bottom: 0.9375rem;
 }
 h5{
   display:flex;
   align-items: center;
-  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
 
 }
 h5 span.price{
   color: white;
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 700;
-  padding-right: 10px;
+  padding-right: 0.625rem;
 }
 h5 span{
   color: hsl(204, 43%, 93%);
@@ -72,12 +72,12 @@ color: white;
   background-color: hsl(71, 73%, 54%);
   text-decoration: none;
   color: white;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 800;
-  padding: 12px 0;
-  border-radius: 4px;
-  margin-top: 30px;
-  box-shadow: 5px 5px 5px lightgreen;
+  padding: 0.75rem 0;
+  border-radius: 0.25rem;
+  margin-top: 1.875rem;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem lightgreen;
   cursor: pointer;
 }
 a:hover{
@@ -91,29 +91,33 @@ a:hover{
 }
 h1{
   color: hsl(179, 62%, 43%);
-  font-size: 26px;
-  padding-bottom: 20px;
+  font-size: 1.625rem;
+  padding-bottom: 1.25rem;
 }
 h3{
   color: hsl(71, 73%, 54%);
-  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
 }
 .box-right ul{
 list-style: none;
 }
 .box-right li{
   color: white;
-  padding-bottom: 4px;
-  font-size: 14px;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
 }
 
-@media only screen and (max-width:425px){
+@media only screen and (max-width:26.5625rem){
+  body{
+    background-image: url(images/background.jpeg);
+    background-size: cover;
+  }
  .wrapper{
   display: flex;
   flex-direction: column;
  }
  .box{
-  padding: 15px;
+  padding: 0.9375rem;
  }
 
 }
