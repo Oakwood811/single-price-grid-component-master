@@ -16,131 +16,106 @@ body{
 
 .container{
   margin: 0 auto;
-  max-width: 45.625rem;
-  height: fit-content;
-  background-color: white;
-  border-radius: 0.625rem;
+  max-width: 960px;
+
 }
 .wrapper{
   display: grid;
   border-radius: 7px;
+  overflow: hidden;
+  background-color: white;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "a a" "b c";
+  margin: 2rem 1rem;
 }
-header{
-  margin: 2.8125rem;
+.box{
+  padding: 40px;
 }
-header h1{
-  font-size: 1.5rem;
-  color:hsl(179, 62%, 43%);
-  padding-bottom: 1.5625rem;
+.join{
+  grid-area: a;
 }
-header h2{
-  font-size: 1.125rem;
-  color: hsl(71, 73%, 54%);
-  padding-bottom: 0.625rem;
-}
-header p{
+.join p{
   color: hsl(218, 22%, 67%);
-  opacity: .8;
-  font-weight: 400;
-  line-height: 1.5rem;
-  padding-right: 3.75rem;
+  line-height: 1.4;
 }
-main{
-  display: flex;
+h2{
   color: white;
-  opacity: .8;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+h5{
+  display:flex;
+  align-items: center;
+  padding-bottom: 12px;
 
+}
+h5 span.price{
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+h5 span{
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
 }
 .box-left{
-  display: grid;
-  width: 22.8125rem;
-  background-color: hsl(179, 62%, 43%);
-  padding: 2.8125rem;
-  justify-content: space-evenly;
-  padding-bottom: 3.125rem;
-  border-bottom-left-radius: 0.625rem;
+  grid-area: b;
+  background-color:hsl(179, 62%, 43%);
 }
-h3{
-  padding-bottom: 0.625rem;
-}
-.payment-box{
-  font-size: 1.875rem;
-  display: flex;
-  align-items: center;
-  padding-bottom: 0.625rem;
+.box-left p{
+color: white;
 }
 .box-left a{
-  color: white;
-  margin-top: 1.875rem;
-  padding: 0.9375rem 1.875rem;
-  background-color: hsl(71, 73%, 54%);
-  border-radius: 0.625rem;
-  text-decoration: none;
+  display: block;
   text-align: center;
-  box-shadow: 0.25rem 0.3125rem 0.25rem grey;
+  background-color: hsl(71, 73%, 54%);
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 12px 0;
+  border-radius: 4px;
+  margin-top: 30px;
+  box-shadow: 5px 5px 5px lightgreen;
+  cursor: pointer;
 }
 a:hover{
-  background-color: hsl(218, 22%, 67%);
+  background-color: white;
   color: hsl(71, 73%, 54%);
-  box-shadow: hsl(179, 62%, 43%);
+  transition: .5s ease-in;
 }
-.month{
-  font-size: 1rem; 
-  margin-left: 0.625rem;
-  color:hsl(204, 43%, 93%, .5) 
-}
-
 .box-right{
-  width: 22.8125rem;
-  height: 100%;
-  background-color: hsla(179, 62%, 43%, 0.847);
-  padding: 2.8125rem;
-  line-height: 1.5;
-  padding-bottom: 3.125rem;
-  border-bottom-right-radius: 0.625rem;
+  grid-area: c;
+  background-color:hsl(179, 62%, 43%, 0.6);
 }
-.box-right p{
-  padding-right: 2.125rem;
-  opacity: .7;
+h1{
+  color: hsl(179, 62%, 43%);
+  font-size: 26px;
+  padding-bottom: 20px;
 }
-ul{
-  list-style: none;
-  opacity: .7;
+h3{
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 12px;
+}
+.box-right ul{
+list-style: none;
+}
+.box-right li{
+  color: white;
+  padding-bottom: 4px;
+  font-size: 14px;
 }
 
-@media only screen and (max-width:768px){
-  
-  body{
-    background-color: black;
-    line-height: 1;
-  }
-  .container{
-    margin: 2.5rem;
-    padding: 15px;
-    width: 300px;
-    text-align: left;
-    font-size: 13px;
-  }
-  header{
-    margin: 5px;
-  }
-  header p{
-    padding-right: 0;
-  }
-  .box-left{
-    border-radius: 0;
-    padding-left: 0;
-  }
-  .box-left, .box-right{
-    width: 300px;
-    padding: 20px;
-  }
-  .box-right{
-    font-size: 14px;
-    border-bottom-left-radius: 10px;
-    margin-bottom: 10px;
-  }
-  main{
-    display: grid;
-  }
+@media only screen and (max-width:425px){
+ .wrapper{
+  display: flex;
+  flex-direction: column;
+ }
+ .box{
+  padding: 15px;
+ }
+
 }
+  
+
