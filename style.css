@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,*::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 45.625rem;
+  height: fit-content;
+  background-color: white;
+  border-radius: 0.625rem;
+}
+.wrapper{
+  display: grid;
+  border-radius: 7px;
+}
+header{
+  margin: 2.8125rem;
+}
+header h1{
+  font-size: 1.5rem;
+  color:hsl(179, 62%, 43%);
+  padding-bottom: 1.5625rem;
+}
+header h2{
+  font-size: 1.125rem;
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 0.625rem;
+}
+header p{
+  color: hsl(218, 22%, 67%);
+  opacity: .8;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding-right: 3.75rem;
+}
+main{
+  display: flex;
+  color: white;
+  opacity: .8;
+
+}
+.box-left{
+  display: grid;
+  width: 22.8125rem;
+  background-color: hsl(179, 62%, 43%);
+  padding: 2.8125rem;
+  justify-content: space-evenly;
+  padding-bottom: 3.125rem;
+  border-bottom-left-radius: 0.625rem;
+}
+h3{
+  padding-bottom: 0.625rem;
+}
+.payment-box{
+  font-size: 1.875rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.625rem;
+}
+.box-left a{
+  color: white;
+  margin-top: 1.875rem;
+  padding: 0.9375rem 1.875rem;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 0.625rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0.25rem 0.3125rem 0.25rem grey;
+}
+a:hover{
+  background-color: hsl(218, 22%, 67%);
+  color: hsl(71, 73%, 54%);
+  box-shadow: hsl(179, 62%, 43%);
+}
+.month{
+  font-size: 1rem; 
+  margin-left: 0.625rem;
+  color:hsl(204, 43%, 93%, .5) 
+}
+
+.box-right{
+  width: 22.8125rem;
+  height: 100%;
+  background-color: hsla(179, 62%, 43%, 0.847);
+  padding: 2.8125rem;
+  line-height: 1.5;
+  padding-bottom: 3.125rem;
+  border-bottom-right-radius: 0.625rem;
+}
+.box-right p{
+  padding-right: 2.125rem;
+  opacity: .7;
+}
+ul{
+  list-style: none;
+  opacity: .7;
+}
+
+@media only screen and (max-width:768px){
+  
+  body{
+    background-color: black;
+    line-height: 1;
+  }
+  .container{
+    margin: 2.5rem;
+    padding: 15px;
+    width: 300px;
+    text-align: left;
+    font-size: 13px;
+  }
+  header{
+    margin: 5px;
+  }
+  header p{
+    padding-right: 0;
+  }
+  .box-left{
+    border-radius: 0;
+    padding-left: 0;
+  }
+  .box-left, .box-right{
+    width: 300px;
+    padding: 20px;
+  }
+  .box-right{
+    font-size: 14px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 10px;
+  }
+  main{
+    display: grid;
+  }
+}
